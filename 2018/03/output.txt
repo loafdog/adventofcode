@@ -1,0 +1,9 @@
+Max x,y:  {"x"=>998, "y"=>996}
+Read 1409 lines
+total sq in 124850
+********************
+Checking first time
+ 424 id without overlap after first pass
+********************
+Checking second time
+No overlap 1097
