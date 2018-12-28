@@ -1,0 +1,120 @@
+Start sample
+Starting reactions: 16
+No more reactions: 10
+Removed a|A, reacting
+Starting reactions: 10
+No more reactions: 6
+Removed b|B, reacting
+Starting reactions: 14
+No more reactions: 8
+Removed c|C, reacting
+Starting reactions: 10
+No more reactions: 4
+Removed d|D, reacting
+Starting reactions: 14
+No more reactions: 6
+Input polymer doesn't contain e|E
+Input polymer doesn't contain f|F
+Input polymer doesn't contain g|G
+Input polymer doesn't contain h|H
+Input polymer doesn't contain i|I
+Input polymer doesn't contain j|J
+Input polymer doesn't contain k|K
+Input polymer doesn't contain l|L
+Input polymer doesn't contain m|M
+Input polymer doesn't contain n|N
+Input polymer doesn't contain o|O
+Input polymer doesn't contain p|P
+Input polymer doesn't contain q|Q
+Input polymer doesn't contain r|R
+Input polymer doesn't contain s|S
+Input polymer doesn't contain t|T
+Input polymer doesn't contain u|U
+Input polymer doesn't contain v|V
+Input polymer doesn't contain w|W
+Input polymer doesn't contain x|X
+Input polymer doesn't contain y|Y
+Input polymer doesn't contain z|Z
+Shortest polymer with unit removed: ["c", 4]
+Start real input
+Starting reactions: 50000
+No more reactions: 10888
+Removed a|A, reacting
+Starting reactions: 48124
+No more reactions: 10450
+Removed b|B, reacting
+Starting reactions: 48064
+No more reactions: 10456
+Removed c|C, reacting
+Starting reactions: 48070
+No more reactions: 10502
+Removed d|D, reacting
+Starting reactions: 48114
+No more reactions: 6952
+Removed e|E, reacting
+Starting reactions: 48064
+No more reactions: 10436
+Removed f|F, reacting
+Starting reactions: 48094
+No more reactions: 10452
+Removed g|G, reacting
+Starting reactions: 48086
+No more reactions: 10438
+Removed h|H, reacting
+Starting reactions: 48100
+No more reactions: 10472
+Removed i|I, reacting
+Starting reactions: 48088
+No more reactions: 10456
+Removed j|J, reacting
+Starting reactions: 48110
+No more reactions: 10432
+Removed k|K, reacting
+Starting reactions: 48012
+No more reactions: 10372
+Removed l|L, reacting
+Starting reactions: 48032
+No more reactions: 10436
+Removed m|M, reacting
+Starting reactions: 48050
+No more reactions: 10482
+Removed n|N, reacting
+Starting reactions: 48138
+No more reactions: 10466
+Removed o|O, reacting
+Starting reactions: 48092
+No more reactions: 10490
+Removed p|P, reacting
+Starting reactions: 48072
+No more reactions: 10462
+Removed q|Q, reacting
+Starting reactions: 48104
+No more reactions: 10456
+Removed r|R, reacting
+Starting reactions: 48082
+No more reactions: 10478
+Removed s|S, reacting
+Starting reactions: 48070
+No more reactions: 10466
+Removed t|T, reacting
+Starting reactions: 48060
+No more reactions: 10420
+Removed u|U, reacting
+Starting reactions: 48004
+No more reactions: 10464
+Removed v|V, reacting
+Starting reactions: 48068
+No more reactions: 10454
+Removed w|W, reacting
+Starting reactions: 48032
+No more reactions: 10456
+Removed x|X, reacting
+Starting reactions: 48122
+No more reactions: 10452
+Removed y|Y, reacting
+Starting reactions: 48052
+No more reactions: 10442
+Removed z|Z, reacting
+Starting reactions: 48096
+No more reactions: 10422
+Shortest polymer with unit removed: ["d", 6952]
