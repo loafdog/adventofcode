@@ -1,3 +1,6 @@
 # adventofcode
-adventofcode.com
-1
+
+My attempts at solving adventofcode puzzles
+
+https://adventofcode.com/
+
