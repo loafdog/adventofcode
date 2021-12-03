@@ -128,7 +128,131 @@ def solve(file_name)
 
 end
 
-solve('sample.txt')
-solve('sample2.txt')
+def work_time(step, t_now)
+  dur = step.bytes[0] - 64
+  t_now += dur
+  return t_now
+end
 
-solve('aoc_07_2018_input.txt')
+def find_workers(workers, q_steps, t_now)
+  puts "#{__method__} t_now #{t_now} workers=#{workers} q=#{q_steps}"
+
+  max_workers = 2
+  working = Array.new
+  if workers.length == max_workers
+    return working
+  end
+  q_steps.each do |step|
+    next if workers.key?(step)
+    workers[step] = {
+      't_start' => t_now,
+      't_end' => work_time(step, t_now)
+    }
+    working << step
+    q_steps.delete(step)
+    if workers.length == max_workers
+      return working
+    end
+  end
+  # found = false
+  # q_steps.each do |step|
+  #   workers.each_index do |w|
+  #     if workers[w].nil?
+  #       workers[w] = {
+  #         'step' => step,
+  #         't_start' => t_now,
+  #         't_end' => work_time(step, t_now)
+  #       }
+  #       working << step
+  #       q_steps.delete(step)
+  #       found = true
+  #       break
+  #     end
+  #   end
+  #   # if we didn't find a worker first step then don't bother looking
+  #   # for workers for other steps.
+  #   break unless found
+  # end
+
+  return working
+end
+
+def run_workers(workers, t_now)
+  puts "#{__method__} t_now=#{t_now} workers=#{workers}"
+  done_steps = Array.new
+  t_now += 1
+  workers.each do |step, info|
+    if info['t_end'] == t_now
+      done_steps << step
+      workers.delete(step)
+    end
+  end
+  return t_now, done_steps
+end
+
+def solve2(file_name)
+
+  t_now = 0
+  total_time = 0
+  #workers = Array.new(2, nil)
+  workers = Hash.new
+
+  inputs = read_input(file_name)
+  pp inputs
+
+  order = String.new
+  q_steps = Array.new
+
+  last_val = nil
+  while inputs.length > 0 do
+    next_steps = find_next_steps(inputs)
+    puts "next_steps #{next_steps}"
+
+    q_steps += next_steps
+    q_steps.uniq!
+    q_steps.sort!
+
+    print "  INPUTS "
+    pp inputs
+    print "  QUEUE "
+    pp q_steps
+    print "  WORKERS "
+    pp workers
+
+    # find a worker for each item in q
+    working = find_workers(workers, q_steps, t_now)
+    working.each do |cur|
+      #inputs.delete(cur)
+    end
+
+    # determine if worker is done with step.. how?
+    t_now, done_steps = run_workers(workers, t_now)
+    done_steps.each do |cur|
+      # TODO remove cur from inputs and/maybe q
+      
+      # Remove current step from inputs b/c it was processed
+      order << cur
+      puts "  order #{order}"
+    end
+
+    break if t_now > 5
+  end
+  
+  print "DONE INPUTS "
+  pp inputs
+  print "DONE QUEUE "
+  pp q_steps
+
+  puts "last_val #{last_val}"
+  order << last_val.first
+
+  puts order
+
+end
+
+#solve('sample.txt')
+#solve('sample2.txt')
+
+#solve('aoc_07_2018_input.txt')
+
+solve2('sample.txt')
