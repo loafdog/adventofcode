@@ -1,0 +1,10 @@
+199 n/a
+200 inc 1
+208 inc 2
+210 inc 3
+200 dec 0
+207 inc 4
+240 inc 5
+269 inc 6
+260 dec 1
+263 inc 7
