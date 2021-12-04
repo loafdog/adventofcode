@@ -1,0 +1,6 @@
+forward 5 aim=0 d=0 h=5
+down 5 aim=5 d=0 h=5
+forward 8 aim=5 d=40 h=13
+up 3 aim=2 d=40 h=13
+down 8 aim=10 d=40 h=13
+forward 2 aim=10 d=60 h=15
