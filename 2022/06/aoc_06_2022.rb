@@ -57,7 +57,7 @@ def part1(file_name)
   end
 end
 
-def part1(file_name)
+def part2(file_name)
   file = File.open(file_name)
   input_data = file.read
   input_data.each_line do |line|
@@ -71,5 +71,5 @@ end
 part1('aoc_06_2022_sample_input.txt')
 part1('aoc_06_2022_input.txt')
 
-part1('aoc_06_2022_sample_input_part2.txt')
-part1('aoc_06_2022_input.txt')
+part2('aoc_06_2022_sample_input_part2.txt')
+part2('aoc_06_2022_input.txt')
